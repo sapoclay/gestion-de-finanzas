@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Cuida tu cartera!!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headerBar">
+        <header>
+            <div class="titulo" aria-label="Hecho en entreunosyceros.net"></div>
+            <h1 class="topbar">Tu balance actual es de</h1>
+            <p>
+                <span class="balance"></span>
+                <span class="currency">€</span>
+            </p>
+            <header>
+    </div>
+    <hr/>
+    <div class="content">
+        <h3 class="secondTitle">Añadir nueva transacción: </h3>
+        <div class="form">
+            <form id="expForm">
+                <div class="formLine left">
+                    <span for="type">* Tipo:</span>
+                    <select id="type">
+                        <option value="Seleccion">Elige una opción...</option>
+                        <option value="Ingreso">Ingreso</option>
+                        <option value="Gasto">Gasto</option>
+                    </select>
+                </div>
+                <div class="formLine right">
+                    <span for="name">* Nombre:</span>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="formLine right">
+                    <span for="amount">* Cantidad:</span>
+                    <input type="text" id="amount">
+                </div>
+                <button type="submit" class="buttonSave" title="Añadir transacción">Añadir transacción</button>
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Concepto</th>
+                    <th>Cantidad</th>
+                    <th>Fecha</th>
+                    <th>Opción</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTable"></tbody>
+        </table>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

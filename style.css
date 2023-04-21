@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 1100px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, #9141ac, #390164);
+  color: black;
+}
+
+.headerBar {
+  background-color: #44005c;;
+  color: rgb(255, 228, 196);
+  text-align: center;
+  padding: 20px;
+}
+
+/*Título*/
+.titulo {
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 38px / normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  white-space: pre;
+  text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgba(255, 0, 0),
+    0 0 30px rgba(255, 0, 0), 0 0 40px #727272, 0 0 70px #727272,
+    0 0 80px #4e4e4e, 0 0 100px #2b2b2b;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* Estilo para el título cuando se le hace hover */
+.titulo:hover {
+  text-shadow: 0 0 10px rgb(73, 73, 73), 0 0 20px rgb(56, 56, 56),
+    0 0 30px rgb(48, 48, 48), 0 0 40px #5c5c5c, 0 0 70px #000000,
+    0 0 80px #000000, 0 0 100px #000000;
+}
+/* Texto del título */
+.titulo::after {
+  content: "Cuida tu cartera!!";
+}
+.topbar {
+  margin-bottom: 10px;
+}
+
+.currency {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.balance {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.content {
+  width: 580px;
+  margin: 0 auto;
+  padding: 3%;
+  padding-left: 6%;
+}
+
+/* Título secundario*/
+
+.secondTitle {
+  background-color: rgb(91, 0, 196);
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 25px;
+}
+
+/* Formulario*/
+.form {
+  padding: 5px;
+  padding-top: 20px;
+  padding-left: 10%;
+  justify-content: center;
+  background-color: rgb(255, 220, 176);
+}
+
+.formLine {
+  display: inline-flex;
+  padding: 5px 0px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  margin-right: 100px;
+}
+
+input,
+select {
+  width: 130px;
+  margin-left: 10px;
+}
+
+/* Estilo de la tabla */
+table {
+  width: 100%;
+  border: 2px solid #000000;
+}
+
+thead {
+  background-color: rgb(91, 0, 196);
+  color: white;
+  line-height: 30px;
+}
+
+tbody {
+  background-color: rgb(252, 225, 192);
+  line-height: 30px;
+  text-align: center;
+}
+
+/* Boton */
+
+button {
+  width: 200px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 20px;
+  background-color: rgb(132, 0, 255);
+  border-radius: 5px;
+  margin: 14px 25%;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 0 3px grey;
+  transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
